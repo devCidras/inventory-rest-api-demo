@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile, status
-from fastapi.responses import StreamingResponse
+from fastapi.responses import RedirectResponse, StreamingResponse
 from sqlalchemy.orm import Session
 
 from . import crud, csv_io, schemas
@@ -45,6 +45,11 @@ app = FastAPI(
     ),
     version="1.0.0",
 )
+
+
+@app.get("/", include_in_schema=False)
+def root() -> RedirectResponse:
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/health", tags=["health"])
