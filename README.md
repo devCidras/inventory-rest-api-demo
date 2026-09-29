@@ -2,6 +2,11 @@
 
 **Portfolio demo — Python (FastAPI) + SQLAlchemy + SQLite**
 
+**Live demo: https://inventory-rest-api-demo.onrender.com/** (redirects to
+the interactive Swagger UI — click "Authorize" and use `demo-key-123` to
+try every endpoint from the browser; hosted on a free tier, so the first
+load can take 30-50 seconds while the server wakes up)
+
 ![API docs screenshot](sample-output/api-docs-screenshot.png)
 
 ## The problem
