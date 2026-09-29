@@ -1,0 +1,4 @@
+sku,name,category,unit_price,stock_qty,reorder_level
+CAD-001,Office Chair,Furniture,94.90,40,15
+NEW-011,Monitor Stand,Electronics,29.90,25,10
+NEW-012,Cable Organizer,Accessories,9.90,80,20
